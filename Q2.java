@@ -1,13 +1,17 @@
 import java.util.Scanner;
 
-//- Input two different string and print them in same line.
+//- Swap two numbers without the use of third variable.
 public class Q2 {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
-        String apple=scn.nextLine();
-        String banana=scn.nextLine();
-        System.out.println(apple + banana);
-
-
+        System.out.println("Enter 1st number ");
+        int a=scn.nextInt();
+        System.out.println("Enter 2nd number");
+        int b=scn.nextInt();
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println(a);
+        System.out.println(b);
     }
 }

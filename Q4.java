@@ -1,16 +1,13 @@
-import java.util.Scanner;
 
-//Given two numbers, return their sum in the following format:
-//Int t representing number of test cases
-//T lines of Two integers representing the numbers to be added
+//- Assign values of variables 'a' and 'b' as 55 and 70 respectively and then check if:
+//i) both the conditions 'a < 50' and 'a < b' are true.
+     //   ii) at least one of the conditions 'a < 50' or 'a < b' is true.
 public class Q4 {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        int t = scn.nextInt();
-        for (int i = 1; i <= t; i++) {
-            int s = scn.nextInt();
-            int o = scn.nextInt();
-            System.out.println(s + o);
-        }
+        int a=55;
+        int b=70;
+        System.out.println(a < 50 && a < b);
+        System.out.println(a < 50 || a < b);
     }
 }
+

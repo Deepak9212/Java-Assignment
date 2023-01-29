@@ -1,18 +1,12 @@
 import java.util.Scanner;
 
-//- Input name, roll number and field of interest from user and print in the format below :
-//Name: xyz, Roll number: xyz, Field of interest: xyz
+//Write a program to add 8 to the number x and then divide it by 3. Now, the modulus of the quotient
+// is taken with 5 and then multiply the resultant value by 5. Display the final result.
 public class Q1 {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
-        String first_name=scn.next();
-        String last_name=scn.next();
-        int roll_number=scn.nextInt();
-        String field_of_interest=scn.next();
-        System.out.println("name:" +first_name + " " + last_name);
-        System.out.println("Roll number:" + roll_number);
-        System.out.println("Field of interest:" + field_of_interest);
-
+        int x=scn.nextInt();
+        System.out.println((((x + 8) /3)%5) *5);
 
 
     }
