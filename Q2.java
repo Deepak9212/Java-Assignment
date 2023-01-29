@@ -1,8 +1,13 @@
+import java.util.Scanner;
 
-//print the Ascii value of 'U'
+//- Input two different string and print them in same line.
 public class Q2 {
     public static void main(String[] args) {
-        int x='U';
-        System.out.println("The Ascii value of U is:" + x);
+        Scanner scn=new Scanner(System.in);
+        String apple=scn.nextLine();
+        String banana=scn.nextLine();
+        System.out.println(apple + banana);
+
+
     }
 }

@@ -1,17 +1,14 @@
+import java.util.Scanner;
 
-//Swapping of Two Numbers
-
+//- Given few lines of input(number of lines unknown) where each line has two
+//strings, concatenate the strings.
 public class Q5 {
     public static void main(String[] args) {
-        int num1=4;
-        int num2=5;
-        System.out.println("The first number before swap is :"+ num1);
-        System.out.println("The second number before swap is :"+ num2);
-        int temp;
-        temp=num1;
-        num1=num2;
-        num2=temp;
-        System.out.println("The first number after swap is :"+ num1);
-        System.out.println("The Second  number before swap is :"+ num2);
+        Scanner scn = new Scanner(System.in);
+        while(scn.hasNextLine()){
+            String d=scn.next();
+            String k=scn.next();
+            System.out.println(d+k);
+        }
     }
 }

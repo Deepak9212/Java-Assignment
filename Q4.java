@@ -1,11 +1,16 @@
+import java.util.Scanner;
 
-//write a java program to calculate the cube of a number
+//Given two numbers, return their sum in the following format:
+//Int t representing number of test cases
+//T lines of Two integers representing the numbers to be added
 public class Q4 {
     public static void main(String[] args) {
-        int x=3;
-        int Cube=x*x*x;
-        System.out.println("The Side is:"+ x);
-        System.out.println("The cube is:"+ Cube);
-
+        Scanner scn = new Scanner(System.in);
+        int t = scn.nextInt();
+        for (int i = 1; i <= t; i++) {
+            int s = scn.nextInt();
+            int o = scn.nextInt();
+            System.out.println(s + o);
+        }
     }
 }
