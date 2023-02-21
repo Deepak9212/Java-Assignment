@@ -8,6 +8,7 @@ public class Q4 {
         System.out.println("enter the number:");
         N=Sc.nextInt();
         if(N>=0){
+
             System.out.println("your number is positive");
         }else{
             System.out.println("your number is negative and is skipped");
