@@ -1,13 +1,16 @@
-
-//- Assign values of variables 'a' and 'b' as 55 and 70 respectively and then check if:
-//i) both the conditions 'a < 50' and 'a < b' are true.
-     //   ii) at least one of the conditions 'a < 50' or 'a < b' is true.
+// Write a program to print positive number entered by the user, if user enters a negative number, it is
+//skipped.
+import java.util.Scanner;
 public class Q4 {
     public static void main(String[] args) {
-        int a=55;
-        int b=70;
-        System.out.println(a < 50 && a < b);
-        System.out.println(a < 50 || a < b);
+        Scanner Sc=new Scanner(System.in);
+        int N;
+        System.out.println("enter the number:");
+        N=Sc.nextInt();
+        if(N>=0){
+            System.out.println("your number is positive");
+        }else{
+            System.out.println("your number is negative and is skipped");
+        }
     }
 }
-

@@ -1,17 +1,15 @@
-import java.util.Scanner;
 
-//- Swap two numbers without the use of third variable.
+//Write a program to print absolute value of a number entered by the user
+import java.util.Scanner;
 public class Q2 {
     public static void main(String[] args) {
-        Scanner scn=new Scanner(System.in);
-        System.out.println("Enter 1st number ");
-        int a=scn.nextInt();
-        System.out.println("Enter 2nd number");
-        int b=scn.nextInt();
-        a=a+b;
-        b=a-b;
-        a=a-b;
-        System.out.println(a);
-        System.out.println(b);
+        Scanner Sc=new Scanner(System.in);
+        int num;
+        System.out.println("Enter the number:");
+        num=Sc .nextInt();
+        if(num<0){
+            num=num*-1;
+        }
+        System.out.println("the absolute value is:"+" "+num);
     }
 }

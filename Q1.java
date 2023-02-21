@@ -1,13 +1,20 @@
-import java.util.Scanner;
 
-//Write a program to add 8 to the number x and then divide it by 3. Now, the modulus of the quotient
-// is taken with 5 and then multiply the resultant value by 5. Display the final result.
+// Write a program which takes the values of length and breadth from user and check if it is a square or not.
+import java.util.Scanner;
 public class Q1 {
     public static void main(String[] args) {
-        Scanner scn=new Scanner(System.in);
-        int x=scn.nextInt();
-        System.out.println((((x + 8) /3)%5) *5);
-
-
+        Scanner sc=new Scanner(System.in);
+        int length;
+        System.out.println("put the length");
+        length=sc.nextInt();
+        Scanner Sc=new Scanner(System.in);
+        int breadth;
+        System.out.println("put the breadth");
+        breadth=sc.nextInt();
+        if(length == breadth){
+            System.out.println("it is a square");
+        }else{
+            System.out.println("it is not a square");
+        }
     }
 }
